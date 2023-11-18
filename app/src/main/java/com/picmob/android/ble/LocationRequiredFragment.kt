@@ -44,7 +44,7 @@ class LocationRequiredFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentLocationRequiredBinding.inflate(inflater, container, false)
 
         // hide the error messages while checking the permissions
