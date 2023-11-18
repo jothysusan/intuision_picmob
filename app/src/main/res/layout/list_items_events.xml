@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_10"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dimens_5"
+    app:cardElevation="@dimen/dimens_5"
+    app:contentPadding="@dimen/dimens_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:layout_width="@dimen/dimens_0"
+            android:layout_height="@dimen/dimens_100"
+            android:layout_marginEnd="@dimen/dimens_15"
+            android:layout_weight="0.8">
+
+            <com.picmob.android.utils.widgets.ShapeImageView
+                android:id="@+id/event_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_landscape"
+                app:shapeDrawable="@drawable/chat_image_shape" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvMsg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:ellipsize="end"
+                android:fontFamily="@font/bold"
+                android:gravity="bottom|start"
+                android:letterSpacing="0.02"
+                android:lines="2"
+                android:textStyle="bold"
+                android:text="BradPitt and Leonard spotted walking together."
+                android:textColor="@color/Activite"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:ellipsize="end"
+                android:fontFamily="@font/regular"
+                android:gravity="top|start"
+                android:letterSpacing="0.02"
+                android:lines="3"
+                android:text="BradPitt and Leonard spotted walking together."
+                android:textColor="@color/Activite"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

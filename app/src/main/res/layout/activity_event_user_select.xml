@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activity.EventUserSelectActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimens_50"
+        android:layout_height="@dimen/dimens_50"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_continue"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/dimens_20"
+        android:layout_marginTop="@dimen/dimens_20"
+        android:layout_marginEnd="@dimen/dimens_20"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/dimens_5"
+        app:cardElevation="@dimen/dimens_8dp"
+        app:contentPadding="@dimen/dimens_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimens_5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.05"
+                    android:text="@string/users_near_vicinity"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/text_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimens_10"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.mikelau.views.shimmer.ShimmerRecyclerViewX
+                        android:id="@+id/vicinity_user_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".65"
+                        android:fadeScrollbars="false"
+                        android:scrollIndicators="right"
+                        android:scrollbars="vertical"
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:shimmer_demo_angle="30"
+                        app:shimmer_demo_child_count="15"
+                        app:shimmer_demo_layout="@layout/shimmer_request_response" />
+
+                    <TextView
+                        android:id="@+id/userVicinityNoData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".65"
+                        android:fontFamily="@font/medium"
+                        android:gravity="center"
+                        android:text="@string/no_data"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/tbSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="@dimen/dimens_20"
+                            android:layout_marginTop="@dimen/dimens_30"
+                            android:layout_marginEnd="@dimen/dimens_15"
+                            android:background="@drawable/border_with_rounded_corner"
+                            android:fontFamily="@font/medium"
+                            android:letterSpacing="0.05"
+                            android:text="@string/select_all"
+                            android:textColor="@color/purple_700"
+                            android:textSize="@dimen/text_size_12" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dimens_15"
+                android:layout_weight=".33"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.05"
+                    android:text="@string/picmob_users"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/text_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimens_10"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".65"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/search_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_white"
+                            android:drawableEnd="@drawable/ic_search"
+                            android:drawableTint="@color/grey"
+                            android:fontFamily="@font/regular"
+                            android:gravity="center|start"
+                            android:hint="@string/type_name_here"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:letterSpacing="0.05"
+                            android:maxHeight="@dimen/dimens_5"
+                            android:maxLines="1"
+                            android:padding="@dimen/dimens_5"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/Activite"
+                            android:textColorHint="@color/dull_white"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <com.mikelau.views.shimmer.ShimmerRecyclerViewX
+                            android:id="@+id/prediction_list_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fadeScrollbars="false"
+                            android:scrollbars="vertical"
+                            android:visibility="gone"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:shimmer_demo_angle="30"
+                            app:shimmer_demo_child_count="15"
+                            app:shimmer_demo_layout="@layout/shimmer_request_response" />
+
+                        <com.mikelau.views.shimmer.ShimmerRecyclerViewX
+                            android:id="@+id/picmob_user_view_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fadeScrollbars="false"
+                            android:scrollbars="vertical"
+                            android:visibility="visible"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:shimmer_demo_angle="30"
+                            app:shimmer_demo_child_count="15"
+                            app:shimmer_demo_layout="@layout/shimmer_request_response" />
+
+                        <TextView
+                            android:id="@+id/registeredUserNoData"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimens_30"
+                            android:fontFamily="@font/medium"
+                            android:gravity="center"
+                            android:text="@string/no_data"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/add_user"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/dimens_15"
+                        android:layout_marginTop="@dimen/dimens_30"
+                        android:layout_weight=".32"
+                        android:background="@drawable/border_with_rounded_corner"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.05"
+                        android:text="@string/add"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dimens_15"
+                android:layout_weight=".33"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.05"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/text_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimens_10"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".65"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/dimens_5"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/layCC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvCC"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:background="@drawable/rect_white"
+                                    android:fontFamily="@font/medium"
+                                    android:letterSpacing="0.08"
+                                    android:paddingEnd="@dimen/dimens_2"
+                                    android:paddingStart="@dimen/dimens_0"
+                                    android:text="+1"
+                                    android:textColor="@color/Activite"
+                                    android:textSize="@dimen/text_size_13"
+                                    app:drawableEndCompat="@drawable/ic_down" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/phone_number_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/rect_white"
+                                android:drawableEnd="@drawable/ic_dial"
+                                android:drawableTint="@color/grey"
+                                android:fontFamily="@font/regular"
+                                android:gravity="center|start"
+                                android:hint="@string/type_number_here"
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:letterSpacing="0.05"
+                                android:maxHeight="@dimen/dimens_5"
+                                android:maxLines="1"
+                                android:paddingTop="@dimen/dimens_5"
+                                android:paddingBottom="@dimen/dimens_5"
+                                android:paddingStart="@dimen/dimens_5"
+                                android:paddingEnd="@dimen/dimens_5"
+                                android:singleLine="true"
+                                android:textColor="@color/Activite"
+                                android:textColorHint="@color/dull_white"
+                                android:textSize="@dimen/text_size_12" />
+
+                        </LinearLayout>
+
+                        <com.mikelau.views.shimmer.ShimmerRecyclerViewX
+                            android:id="@+id/phone_number_user_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fadeScrollbars="false"
+                            android:scrollbars="vertical"
+                            android:visibility="visible"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:shimmer_demo_angle="30"
+                            app:shimmer_demo_child_count="15"
+                            app:shimmer_demo_layout="@layout/shimmer_request_response" />
+
+                        <TextView
+                            android:id="@+id/phoneNumberUserNoData"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimens_30"
+                            android:fontFamily="@font/medium"
+                            android:gravity="center"
+                            android:text="@string/no_data"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/add_user_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/dimens_10"
+                        android:layout_marginTop="@dimen/dimens_30"
+                        android:layout_weight=".32"
+                        android:background="@drawable/border_with_rounded_corner"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.05"
+                        android:text="@string/phone_book"
+                        android:textColor="@color/purple_700"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dimens_20"
+        android:layout_marginEnd="@dimen/dimens_20"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="@font/medium"
+        android:letterSpacing="0.05"
+        android:text="@string/create_event"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:iconTint="@color/white"
+        app:rippleColor="@color/purple_200" />
+
+</RelativeLayout>

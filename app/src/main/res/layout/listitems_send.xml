@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_margin="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/out_bubble"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_max="@dimen/dimens_290"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:id="@+id/laySMedia"
+            android:layout_width="@dimen/dimens_250"
+            android:layout_height="@dimen/dimens_250"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <com.picmob.android.utils.widgets.ShapeImageView
+                android:id="@+id/imgSProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:shapeDrawable="@drawable/chat_image_shape" />
+
+            <ImageView
+                android:id="@+id/Svideo_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/exo_ic_play_circle_filled" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tvMsgSnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:autoLink="web|phone|email"
+            android:fontFamily="@font/regular"
+            android:letterSpacing="0.05"
+            android:text="Lorem Ipsum is simply  but also the leap into electronic typesetting"
+            android:textAlignment="textStart"
+            android:textColor="#76448a"
+            android:textColorLink="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/laySMedia" />
+
+        <TextView
+            android:id="@+id/tvSDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/regular"
+            android:paddingTop="10dp"
+            android:text="18-Feb-2021 10:04 PM"
+            android:textColor="#9b59b6"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMsgSnd" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

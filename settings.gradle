@@ -1,0 +1,4 @@
+include ':pc'
+include ':VideoCom'
+include ':app'
+rootProject.name = "SingnalR Android"

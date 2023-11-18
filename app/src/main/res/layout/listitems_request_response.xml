@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCont"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_10"
+    app:cardCornerRadius="@dimen/dimens_5"
+    app:cardElevation="@dimen/dimens_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMesg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/regular"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:padding="@dimen/dimens_12"
+            android:text="You have a request form sounder"
+            android:textColor="@color/Activite"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:letterSpacing="0.05"
+            android:paddingEnd="@dimen/dimens_5"
+            android:paddingBottom="@dimen/dimens_2"
+            android:textColor="@color/Activite"
+            android:textSize="@dimen/text_size_12" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_trans">
+
+            <TextView
+                android:id="@+id/tvTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/bold"
+                android:letterSpacing="0.08"
+                android:padding="@dimen/dimens_7dp"
+                android:text="VIEW REQUEST"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

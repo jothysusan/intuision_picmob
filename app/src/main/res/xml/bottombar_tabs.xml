@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        id="@+id/home"
+        icon="@drawable/ic_home"
+        title="HOME"
+        inActiveColor="#7617FD"
+        activeColor="#FF6200EE"/>
+
+    <tab
+        id="@+id/events"
+        icon="@drawable/ic_eve"
+        title="EVENTS"
+        inActiveColor="#7617FD"
+        activeColor="#FF6200EE" />
+
+    <tab
+        id="@+id/request"
+        icon="@drawable/ic_req"
+        title="REQUEST"
+        inActiveColor="#7617FD"
+        activeColor="#FF6200EE" />
+
+    <tab
+        id="@+id/friends"
+        icon="@drawable/ic_fri"
+        title="FRIENDS"
+        inActiveColor="#7617FD"
+        activeColor="#FF6200EE" />
+
+    <tab
+        id="@+id/gallery"
+        icon="@drawable/ic_files"
+        title="GALLERY"
+        inActiveColor="#7617FD"
+        activeColor="#FF6200EE" />
+</tabs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_300">#7617FD</color>
+    <color name="purple_100">#8C3BFF</color>
+    <color name="purple_dull">#8766d1</color>
+    <color name="purple_trans">#838766D1</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightWhite">#fbfcfc</color>
+    <color name="dull_white">#C1C1C1</color>
+    <color name="dulled_white">#F6F6F6</color>
+    <color name="grey">#8F575757</color>
+    <color name="transparent">#40000000</color>
+    <color name="grey_dull">#C1C1C1</color>
+    <color name="light_text_color">#9d9d9d</color>
+    <color name="Activite">#333333</color>
+    <color name="dullActivite">#6A6A6A</color>
+    <color name="slightgrey">#D3D3D3</color>
+    <color name="light_grey">#F5F5F5</color>
+    <color name="Gray">#999999</color>
+    <color name="shadow">#f4f4f4</color>
+    <color name="Black">#000000</color>
+    <color name="reginactive">#EAF0FC</color>
+    <color name="yellow">#FEF6D1</color>
+    <color name="txt">#CD5506</color>
+    <color name="green">#1BAD06</color>
+    <color name="Red">#FF0000</color>
+    <color name="gold">#efd930</color>
+    <color name="txtclr">#f5f5f5</color>
+    <color name="shimmer_color">#60cccccc</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="local_message_background">#D1DBE0</color>
+    <color name="remote_message_background">#0288D1</color>
+
+</resources>

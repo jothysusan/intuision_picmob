@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mEdit"
+        android:icon="@drawable/ic_pencil"
+        android:theme="@style/OverflowMenu"
+        android:title="@string/edit_profile"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/mUpload"
+        android:icon="@drawable/ic_upload"
+        android:theme="@style/OverflowMenu"
+        android:title="@string/update_profile"
+        app:showAsAction="always">
+    </item>
+</menu>

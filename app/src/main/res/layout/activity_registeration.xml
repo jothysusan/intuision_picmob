@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!--android:layout_weight="1.7"-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toTopOf="@id/layReg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="Username"
+                    android:textColor="@color/Activite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/etUsrName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter username"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:textColor="@color/Activite"
+                    android:textColorHint="@color/dull_white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/dull_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="Firstname"
+                    android:textColor="@color/Activite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/etFname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter firstname"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/Activite"
+                    android:textColorHint="@color/dull_white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/dull_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="Lastname"
+                    android:textColor="@color/Activite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/etLname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter lastname"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/Activite"
+                    android:textColorHint="@color/dull_white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/dull_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="E-mail"
+                    android:textColor="@color/Activite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/etMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter email address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/Activite"
+                    android:textColorHint="@color/dull_white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/dull_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="Phone"
+                    android:textColor="@color/Activite"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layCC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvCC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/medium"
+                            android:letterSpacing="0.08"
+                            android:padding="5dp"
+                            android:text="+1"
+                            android:textColor="@color/Activite"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/ic_down" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:hint="Enter phone number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:letterSpacing="0.1"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/Activite"
+                        android:textColorHint="@color/dull_white"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/dull_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="Zip-code"
+                    android:textColor="@color/Activite"
+                    android:textSize="13sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/etZip"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.8"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:hint="Enter zipcode"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:letterSpacing="0.1"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/Activite"
+                        android:textColorHint="@color/dull_white"
+                        android:textSize="13sp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/layLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_loc" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/dull_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="Password"
+                    android:textColor="@color/Activite"
+                    android:textSize="13sp" />
+
+
+                <com.xwray.passwordview.PasswordView
+                    android:id="@+id/etPswrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter password"
+                    android:imeOptions="actionNext"
+                    android:letterSpacing="0.1"
+                    android:paddingStart="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/Activite"
+                    android:textColorHint="@color/dull_white"
+                    android:textSize="13sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/dull_white" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="Confirm password"
+                    android:textColor="@color/Activite"
+                    android:textSize="13sp" />
+
+
+                <com.xwray.passwordview.PasswordView
+                    android:id="@+id/etCpswrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter confirm password"
+                    android:imeOptions="actionDone"
+                    android:letterSpacing="0.1"
+                    android:paddingStart="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/Activite"
+                    android:textColorHint="@color/dull_white"
+                    android:textSize="13sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/dull_white" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/layReg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvContent"
+        app:layout_constraintVertical_weight="2">
+
+        <!-- android:layout_weight=".3"-->
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnReg"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:text="* All information will remain private"
+            android:textColor="@color/purple_dull"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/medium"
+            android:letterSpacing="0.1"
+            android:text="@string/register"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

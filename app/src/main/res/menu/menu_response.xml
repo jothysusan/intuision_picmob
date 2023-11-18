@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mAddFriend"
+        android:icon="@drawable/ic_add_friend"
+        android:theme="@style/OverflowMenu"
+        android:title="@string/add_friend"
+        app:showAsAction="always">
+    </item>
+</menu>

@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">Picmob</string>
+    <string name="username">Username</string>
+    <string name="group">Group</string>
+    <string name="role">Role</string>
+    <string name="document">Document</string>
+    <string name="image">Image</string>
+    <string name="register">Register</string>
+    <string name="request_picture">REQUEST PICTURE</string>
+    <string name="request_video">REQUEST VIDEO</string>
+    <string name="invite_friends">INVITE FRIENDS</string>
+    <string name="menu">Menu</string>
+
+    <string name="invalid_usrname">Enter valid username!</string>
+    <string name="invalid_Fname">Enter valid first name!</string>
+    <string name="invalid_Lname">Enter valid last name!</string>
+    <string name="invalid_Email">Enter valid e-mail!</string>
+    <string name="invalid_Phone">Enter valid phone number!</string>
+    <string name="invalid_zip">Enter valid zip code!</string>
+    <string name="invalid_pswrd">Password must contains minimum 6 letters!</string>
+    <string name="invalid_Cpswrd">Password and confirm password does not match!</string>
+    <string name="send">SEND</string>
+
+    <string name="request_from">You have a new request from </string>
+    <string name="response_from">You have a response from </string>
+    <string name="request">SEE REQUEST</string>
+    <string name="response">OPEN GALLERY</string>
+    <string name="make_public">MAKE PUBLIC</string>
+    <string name="re_take">RE-TAKE</string>
+    <string name="send_picture">SEND PICTURE</string>
+    <string name="send_video">SEND VIDEO</string>
+    <string name="make_request">REQUEST</string>
+
+
+    <array name="user_name">
+        <item>Select Name</item>
+        <item>Alice</item>
+        <item>Bob</item>
+        <item>Charlie</item>
+        <item>Doug</item>
+        <item>Emy</item>
+        <item>Fred</item>
+    </array>
+
+
+    <array name="group">
+        <item>Select group</item>
+        <item>Florida</item>
+        <item>California</item>
+    </array>
+
+
+    <array name="role">
+        <item>Select your role</item>
+        <item>Initiator</item>
+        <item>Responder</item>
+    </array>
+    <string name="title_activity_maps">Map</string>
+    <string name="select_all">SELECT ALL</string>
+    <string name="send_to_all">SEND TO ALL</string>
+    <string name="change_location">Change Location</string>
+    <string name="update">UPDATE</string>
+    <string name="gallery">GALLERY</string>
+    <string name="camera">CAMERA</string>
+    <string name="ignore">IGNORE</string>
+
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+
+    <string name="facebook_app_id">709016773116356</string>
+    <string name="fb_login_protocol_scheme">fb709016773116356</string>
+
+    <string name="login">Login</string>
+    <string name="default_notification_channel_id">fcm_picmob_default</string>
+    <string name="phone_contacts">PHONE CONTACTS</string>
+    <string name="other_applications">OTHER APPLICATIONS</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="add_media">ADD MEDIA</string>
+    <string name="picmob">PICMOB</string>
+    <string name="add_friend">ADD FRIEND</string>
+    <string name="send_message">SEND MESSAGE</string>
+
+    <string name="enter_6_digit">Enter the 6 digit code sent to your </string>
+    <string name="resend_code">Resend Code</string>
+
+    <string name="reset_password">Reset Password</string>
+    <string name="verify">VERIFY</string>
+    <string name="submit">SUBMIT</string>
+    <string name="password">Password</string>
+    <string name="continues">CONTINUE</string>
+    <string name="send_request">SEND REQUEST</string>
+    <string name="last_update">Last Update</string>
+    <string name="error_location_inadequate">Location settings are inadequate, and cannot be fixed here. Fix in Settings.</string>
+    <string name="error_gps_not_enabled">GPS not enabled</string>
+    <string name="gps_enabled_text">Picmob is trying to access your location</string>
+    <string name="gps_disabled_text">To update current location GPS must be ON</string>
+    <string name="stop_service">stop service</string>
+    <string name="lbl_proximity_radius">Proximity \nRadius in Miles</string>
+    <string name="delete">Delete</string>
+    <string name="msg_deleted">Deleted Successfully</string>
+    <string name="no_data">No data available</string>
+    <string name="download">Download</string>
+    <string name="start_download">Downloading started</string>
+    <string name="download_failed">Downloaded failed</string>
+    <string name="delete_confirmation_message">Are you sure you want to delete?</string>
+    <string name="event_delete_confirmation_message">Are you sure you want to delete the Event?</string>
+    <string name="selected_item_delete_confirmation_message">Are you sure you want to delete the selected items?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="message_sent">Message sent</string>
+    <string name="enter_message">Enter your message!</string>
+    <string name="please_add_photo_or_video">Please add photo or video first!</string>
+    <string name="label_continue">Continue</string>
+    <string name="choose_event_location">Choose Event Location</string>
+    <string name="request_label">Request Received</string>
+    <string name="response_label">Response</string>
+    <string name="initiator_label">Request Sent</string>
+    <string name="shared_by">Shared by</string>
+    <string name="requested_to">You have created a request </string>
+    <string name="respond_label">RESPOND</string>
+    <string name="requested_to_label">Requested to </string>
+    <string name="request_sent_message">Request sent</string>
+    <string name="create_event">Create Event</string>
+    <string name="private_event_label">Private Events</string>
+    <string name="public_event_label">Public Events</string>
+    <string name="created_event_label">Created Events</string>
+    <string name="event_name_label">Event Name</string>
+    <string name="description_label">Description</string>
+    <string name="enter_event_name_label">Enter Event Name</string>
+    <string name="enter_event_description_label">Enter Event Description</string>
+    <string name="public_label">Public</string>
+    <string name="private_label">Private</string>
+    <string name="select_display_picture_optional">Select Display Picture(Optional)</string>
+    <string name="event_name_empty">Event Name should not be empty</string>
+    <string name="event_description_empty">Event Description should not be empty</string>
+    <string name="event_type_label">Event Type</string>
+    <string name="download_selected">Download selected</string>
+    <string name="delete_selected">Delete selected</string>
+    <string name="add_remove_users">Add/Remove Users</string>
+    <string name="add_picture_video_label">Add Picture/Video</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="event">Event</string>
+    <string name="event_back_confirmation_message">By going back,changes you made will be lost.Are you sure you want to go back?</string>
+    <string name="no_internet_message">Check your internet connection and try again later!</string>
+    <string name="ok">Ok</string>
+    <string name="back_again_to_exit">Press back again to exit</string>
+    <string name="add">Add</string>
+    <string name="phone_book">Phonebook</string>
+    <string name="type_number_here">Type Number Here</string>
+    <string name="phone_number">Phone number</string>
+    <string name="type_name_here">Type Name Here</string>
+    <string name="picmob_users">Picmob Users</string>
+    <string name="users_near_vicinity">Users near vicinity</string>
+    <string name="select_users_label">Select Users</string>
+    <string name="create_event_label">Create Event</string>
+    <string name="no_users_selected">Choose atleast one user to create event!</string>
+    <string name="delete_event">Delete Event</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password_question_mark">Forgot Password?</string>
+    <string name="enter_phone_number_hint">Enter phone number</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="enter_confirm_password">Enter confirm password</string>
+    <string name="image_attached">Image Attached</string>
+    <string name="video_attached">Video Attached</string>
+    <string name="select_image">Please select image</string>
+    <string name="update_event">Update Event</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="verification_failed_message">Verification failed!</string>
+    <string name="edit_mobile_number">Edit Mobile Number</string>
+    <plurals name="user_radius_info">
+        <item quantity="one">%d user was found within a %d-mile radius</item>
+        <item quantity="other">%d users were found within a %d-mile radius</item>
+    </plurals>
+    <plurals name="hosted_by">
+        <item quantity="one">Your %s Event</item>
+        <item quantity="other">%s Event hosted by %s</item>
+    </plurals>
+    <string name="no_devices_found">No devices found</string>
+    <string name="chat_title">Chat</string>
+    <string name="device_list_title">Pair with new device</string>
+    <string name="location_required_error">The location permission is required to support Bluetooth Low Energy communication</string>
+    <string name="grant_permission_prompt">Grant Location Permission</string>
+    <string name="active_scan_message">Scanning for devices</string>
+    <string name="bt_not_enabled">Please enable Bluetooth in order to scan for devices</string>
+    <string name="enable_bluetooth_prompt">Enable Bluetooth</string>
+    <string name="bt_ads_not_supported">Bluetooth Advertisements are not supported on this device</string>
+    <string name="chat_confirm_message">Would you like to chat with %1$s</string>
+    <string name="chat_deny_button">No</string>
+    <string name="chat_confirm_button">Yes</string>
+    <string name="no_connected_device_message">Not connected to a device</string>
+    <string name="connect_device_prompt">Connect with nearby devices</string>
+    <string name="send_message_button">Send Message</string>
+    <string name="chatting_with_device">Chatting with %1$s</string>
+    <string name="your_device_address">Your device address:</string>
+    <string name="scanning_header">Choose a device</string>
+</resources>

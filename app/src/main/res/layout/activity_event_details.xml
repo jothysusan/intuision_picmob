@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimens_50"
+        android:layout_height="@dimen/dimens_50"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/selectedActionLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/details_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0"
+        android:layout_above="@id/selectedActionLayout"
+        android:layout_margin="@dimen/dimens_10"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/dimens_5"
+        app:cardElevation="@dimen/dimens_8dp"
+        app:contentPadding="@dimen/dimens_15"
+        app:layout_constraintBottom_toTopOf="@id/selectedActionLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/hostedByLabel"
+                android:layout_width="@dimen/dimens_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:fontFamily="@font/medium"
+                android:letterSpacing="0.05"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintEnd_toStartOf="@id/tbPublicity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Private Event hosted by User59" />
+
+            <ToggleButton
+                android:id="@+id/tbPublicity"
+                style="@style/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_40"
+                android:background="@drawable/toggle_selector"
+                android:enabled="false"
+                android:paddingStart="@dimen/dimens_5"
+                android:paddingEnd="@dimen/dimens_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/toggleClickView"
+                android:layout_width="@dimen/dimens_0"
+                android:layout_height="@dimen/dimens_0"
+                app:layout_constraintBottom_toBottomOf="@id/tbPublicity"
+                app:layout_constraintEnd_toEndOf="@id/tbPublicity"
+                app:layout_constraintStart_toStartOf="@id/tbPublicity"
+                app:layout_constraintTop_toTopOf="@id/tbPublicity" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_30"
+                android:layout_marginBottom="@dimen/dimens_15"
+                android:fontFamily="@font/medium"
+                android:letterSpacing="0.05"
+                android:paddingBottom="@dimen/dimens_10"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/edit_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hostedByLabel"
+                tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+
+            <ImageView
+                android:id="@+id/edit_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_30"
+                android:src="@drawable/ic_pencil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/description"
+                app:layout_constraintTop_toBottomOf="@id/hostedByLabel"
+                app:tint="@color/grey" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/border_with_rounded_corner"
+                android:drawableStart="@drawable/ic_plus"
+                android:drawablePadding="@dimen/dimens_10"
+                android:fontFamily="@font/medium"
+                android:letterSpacing="0.1"
+                android:padding="@dimen/dimens_10"
+                android:text="@string/add_picture_video_label"
+                android:textAllCaps="false"
+                android:textColor="@color/purple_500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/eventRecyclerView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/eventRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_0"
+                android:layout_marginTop="@dimen/dimens_30"
+                app:layout_constraintBottom_toTopOf="@id/btnAddMedia"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                tools:layout_editor_absoluteX="71dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/selectedActionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomLayout"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:layout_marginEnd="@dimen/dimens_10"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/btnDownloadSelected"
+            android:layout_width="@dimen/dimens_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/medium"
+            android:letterSpacing="0.1"
+            android:text="@string/download_selected"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDeleteSelected"
+            android:layout_width="@dimen/dimens_0"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:layout_weight="1"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/medium"
+            android:letterSpacing="0.1"
+            android:text="@string/delete_selected"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:layout_marginEnd="@dimen/dimens_10"
+        android:layout_marginBottom="@dimen/dimens_10"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnAddRemoveUser"
+            android:layout_width="@dimen/dimens_0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/medium"
+            android:letterSpacing="0.1"
+            android:padding="@dimen/dimens_5"
+            android:text="@string/add_remove_users"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/btnDelete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="@dimen/dimens_0"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/medium"
+            android:letterSpacing="0.1"
+            android:text="@string/delete_event"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnAddRemoveUser"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

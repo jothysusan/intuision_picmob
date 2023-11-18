@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimens_50"
+        android:layout_height="@dimen/dimens_50"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swipy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/create_event"
+        android:layout_marginBottom="@dimen/dimens_50"
+        app:srl_direction="top">
+
+
+        <com.mikelau.views.shimmer.ShimmerRecyclerViewX
+            android:id="@+id/rvEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:shimmer_demo_angle="30"
+            app:shimmer_demo_child_count="15"
+            app:shimmer_demo_layout="@layout/shimmer_request_response" />
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <Button
+        android:id="@+id/create_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:layout_marginEnd="@dimen/dimens_10"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="@font/medium"
+        android:letterSpacing="0.05"
+        android:text="@string/create_event"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:rippleColor="@color/purple_200" />
+
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/medium"
+        android:text="@string/no_data"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:layout_width="@dimen/dimens_0"
+            android:layout_marginEnd="5dp"
+            android:layout_height="@dimen/dimens_150"
+            android:layout_weight="0.8">
+
+            <com.picmob.android.utils.widgets.ShapeImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shapeDrawable="@drawable/chat_image_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_movie" />
+
+            <ImageView
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:id="@+id/videoPlaceholder"
+                android:background="@drawable/round_corner_placeholder_shape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/exo_ic_play_circle_filled" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUsrName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/medium"
+                android:letterSpacing="0.05"
+                android:padding="5dp"
+                android:text="Shared by sounder78887"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/medium"
+                android:letterSpacing="0.05"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="2.5dp"
+                android:text="Message"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/regular"
+                android:letterSpacing="0.05"
+                android:lines="4"
+                android:paddingStart="5dp"
+                android:paddingTop="2.5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp"
+                android:text="Shared by sounder78887"
+                android:textColor="@color/Activite"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

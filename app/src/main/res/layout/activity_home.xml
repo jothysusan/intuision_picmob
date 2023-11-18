@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_menu" />
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="16dp"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        app:bb_behavior="shifting"
+        app:bb_inActiveTabAlpha="0.3"
+        app:bb_inActiveTabColor="@color/purple_dull"
+        app:bb_activeTabColor="@color/purple_500"
+        app:bb_titleTypeFace="fonts/regular.ttf"
+        app:bb_activeTabAlpha="1"
+        app:bb_showShadow="false"
+        app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"/>
+
+
+
+   <!-- <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        app:bb_tabletMode="true"
+        app:bb_behavior="shy"
+        app:bb_inActiveTabAlpha="0.6"
+        app:bb_activeTabAlpha="1"
+        android:elevation="16dp"
+        app:bb_badgesHideWhenActive="true"
+        app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"
+        app:bb_titleTypeFace="fonts/regular.ttf"
+        app:bb_showShadow="true" />-->
+
+  <!--  app:bb_behavior="shifting|shy|underNavbar"-->
+
+    <!--<com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:elevation="16dp"
+        android:padding="8dp"
+        app:cnb_addBottomInset="true"
+        app:cnb_addLeftInset="true"
+        app:cnb_addRightInset="true"
+        app:cnb_menuResource="@menu/bottom_menu"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_unselectedColor="@color/purple_dull" />-->
+</RelativeLayout>
